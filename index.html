@@ -1,77 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Recipe page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | FAQ accordion</title>
 
-  Simple Omelette Recipe
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+      <div style="display: flex; align-items: center; padding-bottom: 20px;">
+        <img src="./assets/images/icon-star.svg" class="star"/>
+        
+        <h1>FAQs</h1>
+      </div>
 
-  An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-  to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+      <div class="accordion-section">
+        <div class="accordion">
+          
+          What is Frontend Mentor, and how will it help me?
+          <!-- <img src="./assets/images/icon-plus.svg" class="accordion-icon"/> -->
+        </div>
+        
+        <div class="panel">
+          <p>Frontend Mentor offers realistic coding challenges to help developers improve their frontend
+        coding skills with projects in HTML, CSS, and JavaScript. It's suitable
+        for all levels and ideal for portfolio building.</p></div>
+      </div>
 
-  Preparation time
-
-  Total: Approximately 10 minutes
-  Preparation: 5 minutes
-  Cooking: 5 minutes
-
-  Ingredients
-
-  2-3 large eggs
-  Salt, to taste
-  Pepper, to taste
-  1 tablespoon of butter or oil
-  Optional fillings: cheese, diced vegetables, cooked meats, herbs
-
-  Instructions
-
-  Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
-  You can add a tablespoon of water or milk for a fluffier texture.
-
-  Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.
-
-  Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-  the eggs evenly coat the surface.
-
-  Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the 
-  middle, sprinkle your chosen fillings over one half of the omelette.
-
-  Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the 
-  fillings. Let it cook for another minute, then slide it onto a plate.
-
-  Enjoy: Serve hot, with additional salt and pepper if needed.
-
-  Nutrition
-
-  The table below shows nutritional values per serving without the additional fillings.
-
-  Calories
-  277kcal
-
-  Carbs
-  0g
-
-  Protein
-  20g
-
-  Fat
-  22g
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      <div class="accordion-section">
+        <div class="accordion">Is Frontend Mentor free? </div>
+      
+        <div class="panel">Yes, Frontend Mentor offers both free and premium
+      coding challenges, with the free option providing access to a range of
+      projects suitable for all skill levels. </div>
+      
+    </div class="accordion-section">
+    <div class="accordion-section">
+    <div class="accordion">Can I use Frontend Mentor projects in my portfolio? </div>
+      
+      <div class="panel">Yes, you can use projects completed on Frontend Mentor in
+      your portfolio. It's an excellent way to showcase your skills to potential
+      employers! </div>
   </div>
-</body>
+</div>
+      
+  <div class="accordion-section">
+    <div class="accordion">How can I get help if I'm stuck on a Frontend Mentor challenge?</div>
+      
+      <div class="panel">The best place to get help is inside Frontend Mentor's Discord community.
+      There's a help channel where you can ask questions and seek support from
+      other community members.</div>
+    </div>
+    </section>
+    </main>
+ 
+    <script src="./index.js"></script>
+  </body>
 </html>
