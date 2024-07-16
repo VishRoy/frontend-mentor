@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+    font-family: "Overpass", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: var(--very-dark-blue);
+    color: var(--white);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 20px;
+}
+
+.card {
+    border-radius: 20px;
+    background-color: var(--dark-blue);
+    padding: 2rem;
+}
+
+.star {
+    background-color: var(--light-grey);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.stars-rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.dot {
+    background-color: var(--light-grey);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    background-color: var(--orange);
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    text-transform: uppercase;
+}
+
+.submit-btn:hover , .submit-btn:focus {
+    background-color: var(--white);
+}
+
+.dot:hover {
+    background-color: var(--orange);
+}
+.selected {
+    background-color: var(--white);
+    color: var(--dark-blue);
+}
+
+.thank-you {
+    display: none;
+    text-align: center;
+}
+
+.selected-rating {
+    color: var(--orange);
+    border-radius: 20px;
+    background-color: var(--very-dark-blue);
+    padding: 10px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+@media screen and (min-width : 1440px) {
+    .card {
+        width: 30%;
+    }
+}
